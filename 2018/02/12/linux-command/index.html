@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>linux_command | linyl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="2018-02-12sed#匹配行前加 sed -i ‘/allow 361way.com/iallow www.361way.com&amp;#39; the.conf.file #匹配行前后 sed -i ‘/allow 361way.com/aallow www.361way.com&amp;#39; the.conf.file i: insert 前插入 a: append 后追加 而在书写的时候为方便区">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux_command">
+<meta property="og:url" content="http://yoursite.com/2018/02/12/linux-command/index.html">
+<meta property="og:site_name" content="linyl">
+<meta property="og:description" content="2018-02-12sed#匹配行前加 sed -i ‘/allow 361way.com/iallow www.361way.com&amp;#39; the.conf.file #匹配行前后 sed -i ‘/allow 361way.com/aallow www.361way.com&amp;#39; the.conf.file i: insert 前插入 a: append 后追加 而在书写的时候为方便区">
+<meta property="og:updated_time" content="2018-03-01T12:29:53.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="linux_command">
+<meta name="twitter:description" content="2018-02-12sed#匹配行前加 sed -i ‘/allow 361way.com/iallow www.361way.com&amp;#39; the.conf.file #匹配行前后 sed -i ‘/allow 361way.com/aallow www.361way.com&amp;#39; the.conf.file i: insert 前插入 a: append 后追加 而在书写的时候为方便区">
+  
+    <link rel="alternate" href="/atom.xml" title="linyl" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">linyl</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-linux-command" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/02/12/linux-command/" class="article-date">
+  <time datetime="2018-02-12T08:31:42.000Z" itemprop="datePublished">2018-02-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      linux_command
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="2018-02-12"><a href="#2018-02-12" class="headerlink" title="2018-02-12"></a>2018-02-12</h4><h5 id="sed"><a href="#sed" class="headerlink" title="sed"></a>sed</h5><p>#匹配行前加</p>
+<p>sed -i ‘/allow 361way.com/iallow <a href="http://www.361way.com&#39;" target="_blank" rel="noopener">www.361way.com&#39;</a> the.conf.file</p>
+<p>#匹配行前后</p>
+<p>sed -i ‘/allow 361way.com/aallow <a href="http://www.361way.com&#39;" target="_blank" rel="noopener">www.361way.com&#39;</a> the.conf.file</p>
+<p>i: insert 前插入</p>
+<p>a: append 后追加</p>
+<p>而在书写的时候为方便区分，往往会在i和a后面加一个反斜杠：<br>    sed -i ‘/sourcesthing/i\addstring’ file<br>    sed -i ‘/sourcesthing/a\addstring’ file</p>
+<h1 id="Linux最常用命令及快捷键"><a href="#Linux最常用命令及快捷键" class="headerlink" title="Linux最常用命令及快捷键"></a>Linux最常用命令及快捷键</h1><h2 id="常用命令："><a href="#常用命令：" class="headerlink" title="常用命令："></a>常用命令：</h2><h3 id="文件和目录"><a href="#文件和目录" class="headerlink" title="文件和目录"></a>文件和目录</h3><h4 id="cd"><a href="#cd" class="headerlink" title="cd:"></a>cd:</h4><pre><code># cd /home 进入&apos;/home&apos;目录
+# cd ..  返回上一级
+# cd ../../返回上两级目录
+# cd -  返回上次所在目录
+</code></pre><h4 id="cp-a-d-f-i-p-r-l"><a href="#cp-a-d-f-i-p-r-l" class="headerlink" title="cp: -a -d -f -i -p -r -l"></a>cp: -a -d -f -i -p -r -l</h4><pre><code>-d 复制时保留链接
+-f 覆盖已经存在的目标文件而不给出提示
+-i 与-f选项相反
+-p 除复制文件的内容外，还把修改时间和访问权限也复制到新文件中。
+-r 若给出的源文件是一个目录文件，此时将复制该目录下所有的子目录和文件。
+-l 不复制文件，只生成链接文件。
+
+# cp file1 file2 将file1复制为file2
+# cp -a dir1 dir2 复制dir1目录为dir2目录 --此选项通常在复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容。其作用等于dpR参数组合。-a 等同于-dpr
+</code></pre><h4 id="ls"><a href="#ls" class="headerlink" title="ls:"></a>ls:</h4><pre><code># ls 查看目录中的文件
+# ls -a 查看目录中的文件（包括隐藏文件）
+# ls -l 显示详细信息
+# ls -lrt 按时间显示文件（r表示反向排序，t表示按时间）
+</code></pre><h4 id="pwd"><a href="#pwd" class="headerlink" title="pwd:"></a>pwd:</h4><pre><code># pwd 显示工作路径
+</code></pre><h4 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir:"></a>mkdir:</h4><pre><code># mkdir dir1 创建‘dir1’目录
+# mkdir dir1 dir2 同时创建两个目录
+# mkdir -p /tmp/dir1/dir2 创建一个目录树，即递归的创建创建目录
+</code></pre><h4 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h4><pre><code># mv dir1 dir2 移动/重命名一个目录
+</code></pre><h4 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h4><pre><code># rm -f file1 删除 ‘file1’
+# rm -rf dir1 删除目录‘dir1’及其子目录
+</code></pre><h3 id="查看文件内容："><a href="#查看文件内容：" class="headerlink" title="查看文件内容："></a>查看文件内容：</h3><h4 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h4><pre><code># cat file1 从第一个字节开始正向查看文件的内容
+</code></pre><h4 id="head"><a href="#head" class="headerlink" title="head"></a>head</h4><pre><code># head -2 file1 查看一个文件的前两行
+</code></pre><h4 id="more"><a href="#more" class="headerlink" title="more"></a>more</h4><pre><code># more file1 查看一个长文件的内容
+</code></pre><h4 id="tac"><a href="#tac" class="headerlink" title="tac"></a>tac</h4><pre><code># tac file1 从最后一行开始反向查看一个文件的内容
+</code></pre><h4 id="tail"><a href="#tail" class="headerlink" title="tail"></a>tail</h4><pre><code># tail -3 file1 查看一个文件的最后三行
+</code></pre><h3 id="文本处理"><a href="#文本处理" class="headerlink" title="文本处理"></a>文本处理</h3><h4 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h4><pre><code># grep str /tmp/test 在文件&apos;/tmp/test&apos;中查找“str”
+# grep ^str /tmp/test 在文件&apos;/tmp/test&apos;中查找以&apos;str&apos;开始的行
+# grep [0-9] /tmp/test 在文件&apos;/tmp/test&apos;中查找所以包含数字的行
+# grep -r str /tmp/* 在&apos;/tmp&apos;及其子目录中查找&apos;str&apos;
+</code></pre><h4 id="diff"><a href="#diff" class="headerlink" title="diff"></a>diff</h4><pre><code># diff file1 file2 找出两个文件的不同处
+# sdiff file1 file2 以对比的方式显示两个文件的不同
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/02/12/linux-command/" data-id="cjesg3mug00034crxe6lougav" class="article-share-link">Teilen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/02/12/git-method/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          git常用命令
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/02/11/python-devel-war-02/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">开发Web应用程序</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archiv</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">letzter Beitrag</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/03/15/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/12/git-method/">git常用命令</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/12/linux-command/">linux_command</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/11/python-devel-war-02/">开发Web应用程序</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/11/python-skill/">python_skill</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Lin Yuanlin<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
