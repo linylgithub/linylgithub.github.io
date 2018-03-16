@@ -7,16 +7,16 @@
   
   <title>Python编码规范 | linyl</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Python编码规范本编码规范为PEP-8的精简版。 代码缩进  1.使用4个空格表示Python的缩进，不要使用Tab缩进，更不能混合使用Tab和空格。 空格 Class和top-level的function的定义之间需要两行间隔； Class的method定义之间空一行； Function内逻辑无关段落之间空一行； 其他地方尽量不要再空行。">
+  <meta name="description" content="Python编码规范本编码规范为PEP-8的精简版。 代码缩进 使用4个空格表示Python的缩进，不要使用Tab缩进，更不能混合使用Tab和空格。  空行 Class和top-level的function的定义之间需要两行间隔； Class的method定义之间空一行； Function内逻辑无关段落之间空一行； 其他地方尽量不要再空行。  模块的Import Import的顺序： 标准模块，如">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Python编码规范">
 <meta property="og:url" content="http://yoursite.com/2018/03/16/PEP-8/index.html">
 <meta property="og:site_name" content="linyl">
-<meta property="og:description" content="Python编码规范本编码规范为PEP-8的精简版。 代码缩进  1.使用4个空格表示Python的缩进，不要使用Tab缩进，更不能混合使用Tab和空格。 空格 Class和top-level的function的定义之间需要两行间隔； Class的method定义之间空一行； Function内逻辑无关段落之间空一行； 其他地方尽量不要再空行。">
-<meta property="og:updated_time" content="2018-03-16T10:52:37.827Z">
+<meta property="og:description" content="Python编码规范本编码规范为PEP-8的精简版。 代码缩进 使用4个空格表示Python的缩进，不要使用Tab缩进，更不能混合使用Tab和空格。  空行 Class和top-level的function的定义之间需要两行间隔； Class的method定义之间空一行； Function内逻辑无关段落之间空一行； 其他地方尽量不要再空行。  模块的Import Import的顺序： 标准模块，如">
+<meta property="og:updated_time" content="2018-03-16T11:13:12.433Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python编码规范">
-<meta name="twitter:description" content="Python编码规范本编码规范为PEP-8的精简版。 代码缩进  1.使用4个空格表示Python的缩进，不要使用Tab缩进，更不能混合使用Tab和空格。 空格 Class和top-level的function的定义之间需要两行间隔； Class的method定义之间空一行； Function内逻辑无关段落之间空一行； 其他地方尽量不要再空行。">
+<meta name="twitter:description" content="Python编码规范本编码规范为PEP-8的精简版。 代码缩进 使用4个空格表示Python的缩进，不要使用Tab缩进，更不能混合使用Tab和空格。  空行 Class和top-level的function的定义之间需要两行间隔； Class的method定义之间空一行； Function内逻辑无关段落之间空一行； 其他地方尽量不要再空行。  模块的Import Import的顺序： 标准模块，如">
   
     <link rel="alternate" href="/atom.xml" title="linyl" type="application/atom+xml">
   
@@ -86,12 +86,49 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="Python编码规范"><a href="#Python编码规范" class="headerlink" title="Python编码规范"></a>Python编码规范</h2><p>本编码规范为PEP-8的精简版。</p>
-<h3 id="代码缩进"><a href="#代码缩进" class="headerlink" title="代码缩进"></a>代码缩进</h3><p>  1.使用4个空格表示Python的缩进，不要使用Tab缩进，更不能混合使用Tab和空格。</p>
-<h3 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h3><ol>
+<h3 id="代码缩进"><a href="#代码缩进" class="headerlink" title="代码缩进"></a>代码缩进</h3><ol>
+<li>使用4个空格表示Python的缩进，不要使用Tab缩进，更不能混合使用Tab和空格。</li>
+</ol>
+<h3 id="空行"><a href="#空行" class="headerlink" title="空行"></a>空行</h3><ol>
 <li>Class和top-level的function的定义之间需要两行间隔；</li>
 <li>Class的method定义之间空一行；</li>
 <li>Function内逻辑无关段落之间空一行；</li>
 <li>其他地方尽量不要再空行。</li>
+</ol>
+<h3 id="模块的Import"><a href="#模块的Import" class="headerlink" title="模块的Import"></a>模块的Import</h3><ol>
+<li>Import的顺序：<ol>
+<li>标准模块，如os,sys</li>
+<li>第三方模块</li>
+<li>当前系统的模块</li>
+</ol>
+</li>
+</ol>
+<h3 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h3><p>  总体原则，避免不必要的空格。</p>
+<pre><code>1. 右括号前不要加空格；
+2. 逗号、冒号、分号前不要加空格；
+3. 函数的左括号前不要加空格。如Func(1);
+4. 序列的左括号前不要加空格。list[2];
+5. 操作符左右各加一个空格，不要为了对其增加空格；
+6. 函数默认参数使用的赋值符左右省略空格；
+7. 不要将多句语句写在同一行；
+8. if/for/while语句中，即使执行语句只有一句，也必须另起一行。
+</code></pre><h3 id="命名规范"><a href="#命名规范" class="headerlink" title="命名规范"></a>命名规范</h3><ul>
+<li>CamelCase:<a href="https://baike.baidu.com/item/camelCase/636859" target="_blank" rel="noopener">https://baike.baidu.com/item/camelCase/636859</a></li>
+<li>snake_case:<a href="https://en.wikipedia.org/wiki/Snake_case" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Snake_case</a></li>
+</ul>
+<ol>
+<li>模块名采用全部小写的snake_case;</li>
+<li>Class的名采用UppuerCamelCase</li>
+<li>自定义的异常命名规则为UpperCamelClassError的方式</li>
+<li>模块内部变量和类的名前下划线</li>
+<li>函数命名使用snake_case</li>
+<li>常量使用全部大写的SNAKE_CASE</li>
+<li>Class的methods命名采用全部小写的snake_case</li>
+<li>当methods名称和keyword冲突时，加一个下划线后缀</li>
+<li>Class的普通methods的第一个参数为self</li>
+<li><p>Class的Class methods的第一个参数为cls</p>
+<p>9.</p>
+</li>
 </ol>
 
       
