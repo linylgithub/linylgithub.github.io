@@ -396,7 +396,16 @@ for item in iterable:
 </code></pre><p>现在操作：</p>
 <pre><code>for i,item in enumerate(iterable):
     print i, item
-</code></pre>
+</code></pre><p>enumerate函数可以接收第二个参数。就像下面这样：</p>
+<pre><code>&gt;&gt;&gt; list(enumerate(&apos;abc&apos;))
+[(0, &apos;a&apos;), (1, &apos;b&apos;), (2, &apos;c&apos;)]
+&gt;&gt;&gt;
+&gt;&gt;&gt; list(enumerate(&apos;abc&apos;,1))
+[(1, &apos;a&apos;), (2, &apos;b&apos;), (3, &apos;c&apos;)]
+</code></pre><h2 id="2-字典-集合-生成"><a href="#2-字典-集合-生成" class="headerlink" title="2. 字典/集合 生成"></a>2. 字典/集合 生成</h2><pre><code>&gt;&gt;&gt; my_dict = {i: i * i for i in xrange(100)}
+&gt;&gt;&gt; my_set = (i * 15 for i in xrange(100)}
+</code></pre><h3 id="range-与-xrange区别："><a href="#range-与-xrange区别：" class="headerlink" title="range 与 xrange区别："></a>range 与 xrange区别：</h3><p>xrange用法与range完全相同，所不同的是xrange生成的不是一个list对象，而是一个生成器</p>
+
       
     </div>
     <footer class="article-footer">

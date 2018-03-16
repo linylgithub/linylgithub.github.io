@@ -7,16 +7,16 @@
   
   <title>python技巧 | linyl</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1. 枚举 - enumerate之前操作 i = 0 for item in iterable:     print i, item     i += 1 现在操作： for i,item in enumerate(iterable):     print i, item">
+  <meta name="description" content="1. 枚举 - enumerate之前操作 i = 0 for item in iterable:     print i, item     i += 1 现在操作： for i,item in enumerate(iterable):     print i, item enumerate函数可以接收第二个参数。就像下面这样： &amp;gt;&amp;gt;&amp;gt; list(enumerate(&amp;apos">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python技巧">
 <meta property="og:url" content="http://yoursite.com/2018/02/11/python-skill/index.html">
 <meta property="og:site_name" content="linyl">
-<meta property="og:description" content="1. 枚举 - enumerate之前操作 i = 0 for item in iterable:     print i, item     i += 1 现在操作： for i,item in enumerate(iterable):     print i, item">
-<meta property="og:updated_time" content="2018-03-16T06:23:44.576Z">
+<meta property="og:description" content="1. 枚举 - enumerate之前操作 i = 0 for item in iterable:     print i, item     i += 1 现在操作： for i,item in enumerate(iterable):     print i, item enumerate函数可以接收第二个参数。就像下面这样： &amp;gt;&amp;gt;&amp;gt; list(enumerate(&amp;apos">
+<meta property="og:updated_time" content="2018-03-16T06:39:23.152Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python技巧">
-<meta name="twitter:description" content="1. 枚举 - enumerate之前操作 i = 0 for item in iterable:     print i, item     i += 1 现在操作： for i,item in enumerate(iterable):     print i, item">
+<meta name="twitter:description" content="1. 枚举 - enumerate之前操作 i = 0 for item in iterable:     print i, item     i += 1 现在操作： for i,item in enumerate(iterable):     print i, item enumerate函数可以接收第二个参数。就像下面这样： &amp;gt;&amp;gt;&amp;gt; list(enumerate(&amp;apos">
   
     <link rel="alternate" href="/atom.xml" title="linyl" type="application/atom+xml">
   
@@ -93,7 +93,16 @@ for item in iterable:
 </code></pre><p>现在操作：</p>
 <pre><code>for i,item in enumerate(iterable):
     print i, item
-</code></pre>
+</code></pre><p>enumerate函数可以接收第二个参数。就像下面这样：</p>
+<pre><code>&gt;&gt;&gt; list(enumerate(&apos;abc&apos;))
+[(0, &apos;a&apos;), (1, &apos;b&apos;), (2, &apos;c&apos;)]
+&gt;&gt;&gt;
+&gt;&gt;&gt; list(enumerate(&apos;abc&apos;,1))
+[(1, &apos;a&apos;), (2, &apos;b&apos;), (3, &apos;c&apos;)]
+</code></pre><h2 id="2-字典-集合-生成"><a href="#2-字典-集合-生成" class="headerlink" title="2. 字典/集合 生成"></a>2. 字典/集合 生成</h2><pre><code>&gt;&gt;&gt; my_dict = {i: i * i for i in xrange(100)}
+&gt;&gt;&gt; my_set = (i * 15 for i in xrange(100)}
+</code></pre><h3 id="range-与-xrange区别："><a href="#range-与-xrange区别：" class="headerlink" title="range 与 xrange区别："></a>range 与 xrange区别：</h3><p>xrange用法与range完全相同，所不同的是xrange生成的不是一个list对象，而是一个生成器</p>
+
       
     </div>
     <footer class="article-footer">
