@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Suche"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -60,6 +60,78 @@
 </header>
       <div class="outer">
         <section id="main">
+  
+    <article id="post-python-re" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/06/06/python-re/" class="article-date">
+  <time datetime="2018-06-06T09:18:52.000Z" itemprop="datePublished">2018-06-06</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/06/06/python-re/">python-re</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/06/06/python-re/" data-id="cji2wirvs000311rx1x4c3w4s" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-rabbitmq" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/19/rabbitmq/" class="article-date">
+  <time datetime="2018-03-18T23:52:30.000Z" itemprop="datePublished">2018-03-19</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/19/rabbitmq/">RabbitMQ队列使用</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/03/19/rabbitmq/" data-id="cji2wirw0000811rxj5qv2mlt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
   
     <article id="post-rjsjs" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -92,12 +164,37 @@
 </code></pre><h3 id="二、计算机组成和中央处理器CPU"><a href="#二、计算机组成和中央处理器CPU" class="headerlink" title="二、计算机组成和中央处理器CPU"></a>二、计算机组成和中央处理器CPU</h3><h4 id="1-计算机组成"><a href="#1-计算机组成" class="headerlink" title="1.计算机组成"></a>1.计算机组成</h4><h4 id="2-中央处理器"><a href="#2-中央处理器" class="headerlink" title="2.中央处理器"></a>2.中央处理器</h4><p>指运算器和控制器的合称，即CPU，主要功能有指令控制、操作控制、时间控制和数据加工。</p>
 <h6 id="1-运算器"><a href="#1-运算器" class="headerlink" title="(1) 运算器"></a>(1) 运算器</h6><p>  运算器由算数逻辑单元（Arithmetic and Logic Unit,ALU）、累加寄存器、数据缓冲寄存器和状态条件寄存器组成，它是数据加工处理部件，完成计算机的各种算数和逻辑运算。相对控制器而言，运算器接收控制器的命令而进行动作，即运算器所进行的全部操作都是由控制器发出的控制信号来指挥的，所以它是执行部件。<br>  运算器有如下两个主要功能：<br>  1) 执行所有的算数运算，如加减乘除等基本运算及附加运算。<br>  2) 执行所有的逻辑运算并进行逻辑测试，如与、或、非、零值测试或两个值的比较等。</p>
 <h6 id="2-控制器"><a href="#2-控制器" class="headerlink" title="(2) 控制器"></a>(2) 控制器</h6><p>  运算器只能完成运算，而控制器用于控制整个CPU的工作，它决定了计算机运行过程的自动化。它不仅要保证程序的正确执行，而且要能够处理异常事件。控制器一般包括指令控制逻辑、时序控制逻辑、总线控制逻辑和中断控制逻辑等几个部分。</p>
-<p>  1) 指令寄存器(instruction register IR)。当CPU执行一条指令时，先把它从内存储器取到缓冲寄存器中，再送入指令寄存器(IR)暂存，指令译码器根据IR的内容产生各种伪操作指令，控制其他的组成部件工作，完成所需的功能。<br>  2) 程序计数器(PC)。PC具有寄存信息和计数两种功能，又称为指令计数器。程序的执行分两种情况，一种是顺序执行，二是转移执行。</p>
+<p>  1) 指令寄存器(instruction register IR)。当CPU执行一条指令时，先把它从内存储器取到缓冲寄存器中，再送入指令寄存器(IR)暂存，指令译码器根据IR的内容产生各种伪操作指令，控制其他的组成部件工作，完成所需的功能。</p>
+<p>  2) 程序计数器(PC)。PC具有寄存信息和计数两种功能，又称为指令计数器。程序的执行分两种情况，一种是顺序执行，二是转移执行。</p>
+<p>  3) 地址寄存器(AR)。AR保存当前CPU索访问的内存单元的地址。由于内存和CPU存在着操作速度上的差异，所以需要使用AR保持地址信息，直到内存的读/写操作完成为止。<br>  4) 指令译码器(ID)。指令分为操作码和地址码两部分，为了能执行任何给定的指令，必须对操作码进行分析，以便识别所完成的操作。指令译码器就是对指令中的操作码字段进行分析解释，识别该指令规定的操作，向操作控制器发出具体的控制器发出具体的控制信号，控制各部件工作，完成所需的功能。</p>
+<p>  时序控制逻辑要为每条指令按时间顺序提供应有的控制信号。总线控制逻辑是为多个功能部件服务的信息通路的控制电路。中断控制逻辑用于控制各种中断请求，并根据优先级的高低对中断请求进行排队，逐个交给CPU处理。</p>
+<h6 id="3-寄存器组"><a href="#3-寄存器组" class="headerlink" title="(3) 寄存器组"></a>(3) 寄存器组</h6><p>  寄存器组可分为专用寄存器和通用寄存器。运算器和控制器中的寄存器是专用寄存器，其作用是固定的。通用寄存器用途广泛并可由程序员规定其用途，其数目因处理器不同有所差异。</p>
+<h2 id="2-存储系统"><a href="#2-存储系统" class="headerlink" title="2)存储系统"></a>2)存储系统</h2><h3 id="一、存储器的层次结构"><a href="#一、存储器的层次结构" class="headerlink" title="一、存储器的层次结构"></a>一、存储器的层次结构</h3><p>  大多数计算器都采用3层存储器层次结构。高速缓存(cache)-&gt;主存(MM)-&gt;辅存。</p>
+<h3 id="二、存储器的分类"><a href="#二、存储器的分类" class="headerlink" title="二、存储器的分类"></a>二、存储器的分类</h3><ol>
+<li>读写存储器(RAM):既能读取数据，也能存入数据的存储器。</li>
+<li>只读存储器(ROM):所存储的信息由生产厂家在生产时一次性写入，使用时只能读出，不能写入，断电后信息不会丢失。分以下几类：</li>
+</ol>
+<ul>
+<li>固定只读存储器(ROM)。</li>
+<li>可编程的只读存储器(PROM)。</li>
+<li>可擦除的可编程只读存储器(EPROM)。</li>
+<li>电可擦除的可编程只读存储器(EEPROM)。</li>
+<li>闪速存储器(Flash Memory)。</li>
+</ul>
+<h3 id="三、相连存储器"><a href="#三、相连存储器" class="headerlink" title="三、相连存储器"></a>三、相连存储器</h3><p>  相连存储器(CAM)是一种按内容寻址的存储器。其工作原理就是把数据或数据的某一部分作为关键字，将该关键字与存储器中每一个单元进行比较，找出存储器中所有与关键字相同 数据。</p>
+<h3 id="四、Cache"><a href="#四、Cache" class="headerlink" title="四、Cache"></a>四、Cache</h3><h4 id="1-基本原理"><a href="#1-基本原理" class="headerlink" title="1. 基本原理"></a>1. 基本原理</h4><p>  Cache即高速缓冲存储器，为了解决CPU和主存之间速度匹配问题而设置的。介于CPU与主存之间的小容量存储器，存取速度比主存快。改善系统性能的依据是程序的局部性原理。</p>
+<h4 id="2-性能分析"><a href="#2-性能分析" class="headerlink" title="2. 性能分析"></a>2. 性能分析</h4><p>  &emsp;(1) 命中率：在Cache中访问到的概率。一般用模拟实验的方法得到。H=N1/(N1+N2)。N1为访问cache次数，N2为访问主存次数。<br>  &emsp;(2) 平均实际存取时间：可以用cache和主存的访问周期T1、T2和命中率H来表示：T=H<em>T1+(1-H)</em>T2。当命中率H-&gt;1时，T-&gt;T1，即平均实际存取时间T接近于速度比较快的Cache的访问周期T1。<br>  &emsp;(3) 访问效率：e=T1/T。</p>
+<h4 id="3-地址映像"><a href="#3-地址映像" class="headerlink" title="3. 地址映像"></a>3. 地址映像</h4><p>  &emsp;&emsp;(1) 直接相联映像：主存按Cache的大小分成区，主存每一个分区内的块数与Cache的总块数正好相等，把主存各个区中相对块号相同的那些块映像到Cache中同一块号的那个确定块中。<br>  &emsp;&emsp;直接映像方式的优点是地址变换简单，但是灵活性差。<br>  &emsp;&emsp;(2) 全相联映像：主存中的任意一块可以映射到Cache中的任意一块中。<br>  &emsp;&emsp;全相联映像的主要优点是主存的块调入Cache的位置不受限制，十分灵活，但是因为无法从主存块号中直接获得Cache的块号，变换复杂，速度比较慢。<br>  &emsp;&emsp;(3)组相联映像：介于全相联和直接相联之间的一种折中方案，是目前在Cache中用得比较多的一种地址映像和变换方式。组相联映像方式也把主存和Cache按同样大小划分成块。所不同的地方是，组相联映像方式还把主存和Cache按同样大小划分成组，每一组都由相同的块数组成。</p>
+<h4 id="4-替换算法"><a href="#4-替换算法" class="headerlink" title="4. 替换算法"></a>4. 替换算法</h4><p>常用替换算法有以下几种：</p>
+<p>&emsp;&emsp;(1) 随机替换算法RAND:用随机数发生器产生一个要替换的块号，将该块替换出去。<br>&emsp;&emsp;(2) 先进先出算法FIFO:总是把最先调入的Cache字块替换出去。<br>&emsp;&emsp;(3) 最近最少使用算法LRU：把当前近期Cache中使用次数最少的那块信息块替换出去，是命中率最高的替换算法。<br>&emsp;&emsp;(4) 优化替换算法：先执行一次程序，统计Cache的替换情况，有了先验信息，在第二次执行程序时便可以用最有效的方式来替换。</p>
+<h4 id="5-虚拟存储器"><a href="#5-虚拟存储器" class="headerlink" title="5. 虚拟存储器"></a>5. 虚拟存储器</h4><p>&emsp;&emsp;其管理方式分为如下几种:<br>&emsp;&emsp;（1）页式虚拟存储器：以页为信息传送单位的虚拟存储器。<br>&emsp;&emsp;（2）段式虚拟存储器：一种以程序的逻辑结构形成的段作为主存分配依据的管理方式。<br>&emsp;&emsp;（3）段页式虚拟存储器：页式和段式虚拟存储器结合的一种管理方式。程序按逻辑结构分段，每一段再分成若干大小固定的页。</p>
+<h3 id="五、磁盘"><a href="#五、磁盘" class="headerlink" title="五、磁盘"></a>五、磁盘</h3><h4 id="1-磁盘存储器"><a href="#1-磁盘存储器" class="headerlink" title="1. 磁盘存储器"></a>1. 磁盘存储器</h4><p>&emsp;&emsp;由盘片、驱动器、控制器和接口组成。其存储容量有两种指标：格式化容量和非格式化容量。计算公式分别为：<br>&emsp;&emsp;&emsp;emsp;非格式化容量=面数<em>(磁道数/面)</em>内圆周长<em>最大位密度<br>&emsp;&emsp;&emsp;emsp;格式化容量=面数</em>(磁道数/面)<em>(扇区数/道)</em>(字节数/扇区)</p>
+<h4 id="2-光盘存储器"><a href="#2-光盘存储器" class="headerlink" title="2. 光盘存储器"></a>2. 光盘存储器</h4><p>&emsp;&emsp;采用聚焦激光束在盘式介质上非接触地记录高密度信息的新型存储装置。根据性能和用途，可分为只读性光盘(CD-ROM)、只写一次型光盘(WROM)和可擦除型光盘。</p>
 <h1 id="2-程序语言"><a href="#2-程序语言" class="headerlink" title="2. 程序语言"></a>2. 程序语言</h1><h1 id="3-操作系统"><a href="#3-操作系统" class="headerlink" title="3. 操作系统"></a>3. 操作系统</h1><h1 id="4-系统开发和运行"><a href="#4-系统开发和运行" class="headerlink" title="4. 系统开发和运行"></a>4. 系统开发和运行</h1><h1 id="5-计算机网络"><a href="#5-计算机网络" class="headerlink" title="5. 计算机网络"></a>5. 计算机网络</h1><h1 id="6-多媒体"><a href="#6-多媒体" class="headerlink" title="6. 多媒体"></a>6. 多媒体</h1><h1 id="7-数据库技术"><a href="#7-数据库技术" class="headerlink" title="7. 数据库技术"></a>7. 数据库技术</h1><h1 id="8-算法与数据结构"><a href="#8-算法与数据结构" class="headerlink" title="8.算法与数据结构"></a>8.算法与数据结构</h1><h1 id="9-面向对象技术"><a href="#9-面向对象技术" class="headerlink" title="9. 面向对象技术"></a>9. 面向对象技术</h1><h1 id="10-标准化和知识产权"><a href="#10-标准化和知识产权" class="headerlink" title="10. 标准化和知识产权"></a>10. 标准化和知识产权</h1><h1 id="11-专业英语"><a href="#11-专业英语" class="headerlink" title="11. 专业英语"></a>11. 专业英语</h1><h1 id="12-数据流图"><a href="#12-数据流图" class="headerlink" title="12. 数据流图"></a>12. 数据流图</h1><h1 id="13-UML分析与设计"><a href="#13-UML分析与设计" class="headerlink" title="13. UML分析与设计"></a>13. UML分析与设计</h1><h1 id="14-数据库设计"><a href="#14-数据库设计" class="headerlink" title="14. 数据库设计"></a>14. 数据库设计</h1><h1 id="15-数据结构及算法设计"><a href="#15-数据结构及算法设计" class="headerlink" title="15. 数据结构及算法设计"></a>15. 数据结构及算法设计</h1><h1 id="16-C-程序设计"><a href="#16-C-程序设计" class="headerlink" title="16. C++程序设计"></a>16. C++程序设计</h1><h1 id="17-Java程序设计"><a href="#17-Java程序设计" class="headerlink" title="17. Java程序设计"></a>17. Java程序设计</h1>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/16/rjsjs/" data-id="cjetw42rg0007sgrxy14g0267" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/16/rjsjs/" data-id="cji2wirxf000911rx2fody65u" class="article-share-link">Share</a>
       
       
     </footer>
@@ -180,7 +277,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/16/PEP-8/" data-id="cjetw42qt0000sgrxm3w4xm03" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/16/PEP-8/" data-id="cji2wirvh000011rx5uzhftjp" class="article-share-link">Share</a>
       
       
     </footer>
@@ -225,7 +322,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/03/15/hello-world/" data-id="cjetw42r90003sgrxm1yghbk8" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/03/15/hello-world/" data-id="cji2wirvn000111rxv6vf6xqw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -309,7 +406,7 @@ git checkout dev
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/12/git-method/" data-id="cjetw42r00001sgrxpecfgs64" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/02/12/git-method/" data-id="cji2wirvq000211rxy9m0d8r7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -387,7 +484,7 @@ git checkout dev
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/12/linux-command/" data-id="cjetw42rb0004sgrxuv09ow2l" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/02/12/linux-command/" data-id="cji2wirvx000611rxdgm75prc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -485,7 +582,7 @@ git checkout dev
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/11/python-devel-war-02/" data-id="cjetw42rd0005sgrxyx3fu72z" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/02/11/python-devel-war-02/" data-id="cji2wirvz000711rxtl1tm42a" class="article-share-link">Share</a>
       
       
     </footer>
@@ -538,7 +635,7 @@ for item in iterable:
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/11/python-skill/" data-id="cjetw42rf0006sgrxau29pozq" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/02/11/python-skill/" data-id="cji2wirvv000511rxxd4scgt0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1013,83 +1110,7 @@ _   底线
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/08/use-markdown/" data-id="cjetw42rk0009sgrxk6pglmr5" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-tag-plugins" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/02/08/tag-plugins/" class="article-date">
-  <time datetime="2018-02-08T12:26:01.000Z" itemprop="datePublished">2018-02-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/08/tag-plugins/">tag_plugins</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="引用块"><a href="#引用块" class="headerlink" title="引用块"></a>引用块</h3><p>在文章中插入引言，可包含作者、来源和标题</p>
-<h2 id="别号：quote"><a href="#别号：quote" class="headerlink" title="别号：quote"></a>别号：quote</h2><blockquote><p>没有提供参数，则只输出普通的blockquote</p>
-</blockquote>
-<hr>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/08/tag-plugins/" data-id="cjetw42ri0008sgrxb7fobsp2" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-my-hexo" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/02/08/hello-my-hexo/" class="article-date">
-  <time datetime="2018-02-08T12:16:57.000Z" itemprop="datePublished">2018-02-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/08/hello-my-hexo/">hello,my hexo</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/08/hello-my-hexo/" data-id="cjetw42r70002sgrx7z80fipm" class="article-share-link">Teilen</a>
+      <a data-url="http://yoursite.com/2018/02/08/use-markdown/" data-id="cji2wirye000b11rxxlfntais" class="article-share-link">Share</a>
       
       
     </footer>
@@ -1100,6 +1121,11 @@ _   底线
 
   
 
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+  </nav>
 
 </section>
         
@@ -1115,9 +1141,9 @@ _   底线
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archiv</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/06/">June 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li></ul>
     </div>
   </div>
 
@@ -1125,9 +1151,17 @@ _   底线
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">letzter Beitrag</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/06/06/python-re/">python-re</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/19/rabbitmq/">RabbitMQ队列使用</a>
+          </li>
         
           <li>
             <a href="/2018/03/16/rjsjs/">软件设计师</a>
@@ -1139,14 +1173,6 @@ _   底线
         
           <li>
             <a href="/2018/03/15/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2018/02/12/git-method/">git常用命令</a>
-          </li>
-        
-          <li>
-            <a href="/2018/02/12/linux-command/">linux_command</a>
           </li>
         
       </ul>
