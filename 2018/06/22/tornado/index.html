@@ -13,7 +13,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/06/22/tornado/index.html">
 <meta property="og:site_name" content="linyl">
 <meta property="og:description" content="一、异步和非阻塞I/O实时web功能需要为每个用户提供一个多数时间被闲置的长连接，在传统的同步web服务器中，这意味着要为每个用户提供一个线程，当然每个线程的开销都是很昂贵的。 为了尽量减少并发连接造成的开销，Tornado使用了一种单线程事件循环的方式，这就意味着所有的应用代码都应该是异步非阻塞的，因为在同一时间只有一个操作是有效的。 1、阻塞一个函数在等待某些事情的返回值的时候回被阻塞阻塞。函">
-<meta property="og:updated_time" content="2018-06-22T08:17:30.666Z">
+<meta property="og:updated_time" content="2018-06-22T08:21:24.700Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tornado">
 <meta name="twitter:description" content="一、异步和非阻塞I/O实时web功能需要为每个用户提供一个多数时间被闲置的长连接，在传统的同步web服务器中，这意味着要为每个用户提供一个线程，当然每个线程的开销都是很昂贵的。 为了尽量减少并发连接造成的开销，Tornado使用了一种单线程事件循环的方式，这就意味着所有的应用代码都应该是异步非阻塞的，因为在同一时间只有一个操作是有效的。 1、阻塞一个函数在等待某些事情的返回值的时候回被阻塞阻塞。函">
@@ -87,7 +87,7 @@
       
         <h2 id="一、异步和非阻塞I-O"><a href="#一、异步和非阻塞I-O" class="headerlink" title="一、异步和非阻塞I/O"></a>一、异步和非阻塞I/O</h2><p>实时web功能需要为每个用户提供一个多数时间被闲置的长连接，在传统的同步web服务器中，这意味着要为每个用户提供一个线程，当然每个线程的开销都是很昂贵的。</p>
 <p>为了尽量减少并发连接造成的开销，Tornado使用了一种单线程事件循环的方式，这就意味着所有的应用代码都应该是异步非阻塞的，因为在同一时间只有一个操作是有效的。</p>
-<h3 id="1、阻塞"><a href="#1、阻塞" class="headerlink" title="1、阻塞"></a>1、阻塞</h3><p>一个函数在等待某些事情的返回值的时候回被阻塞<strong>阻塞</strong>。函数被阻塞的原因有很多：</p>
+<h3 id="1、阻塞"><a href="#1、阻塞" class="headerlink" title="1、阻塞"></a>1、阻塞</h3><p>一个函数在等待某些事情的返回值的时候回被阻塞<strong>阻塞</strong>。函数被阻塞的原因有很多：网络I/O，磁盘I/O，互斥锁等。事实上，每个函数在运行和使用CPU的时候都或多或少会被阻塞（举个极端的例子来说明为什么对待CUP阻塞要和对待一般阻塞一样的严肃：比如密码哈希函数bcrypt，需要消耗几百毫秒的CPU时间，这已经远远超过了一般的网络或者磁盘请求时间了）。</p>
 
       
     </div>
