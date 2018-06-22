@@ -95,8 +95,10 @@
 <li>回调注册表 (POSIX信号)</li>
 </ul>
 <p>不论使用哪种类型的接口, 按照定义 异步函数与它们的调用者都有着不同的交互方 式;也没有什么对调用者透明的方式使得同步函数异步(类似<a href="http://www.gevent.org/" target="_blank" rel="noopener">gevent</a>使用轻量级线程的系统性能虽然堪比异步系统,但它们并没有真正的让事情异步).</p>
-<h3 id="3、例子"><a href="#3、例子" class="headerlink" title="3、例子"></a>3、例子</h3><p>一个简单的同步函数<br>    from tornado.httpclient import HTTPClient</p>
-<pre><code>def synchronous_fetch(url):
+<h3 id="3、例子"><a href="#3、例子" class="headerlink" title="3、例子"></a>3、例子</h3><p>一个简单的同步函数</p>
+<pre><code>from tornado.httpclient import HTTPClient
+
+def synchronous_fetch(url):
     http_client = HTTPClient()
     response = http_client.fetch(url)
     return response.body

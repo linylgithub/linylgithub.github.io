@@ -13,7 +13,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/06/22/tornado/index.html">
 <meta property="og:site_name" content="linyl">
 <meta property="og:description" content="一、异步和非阻塞I/O实时web功能需要为每个用户提供一个多数时间被闲置的长连接，在传统的同步web服务器中，这意味着要为每个用户提供一个线程，当然每个线程的开销都是很昂贵的。 为了尽量减少并发连接造成的开销，Tornado使用了一种单线程事件循环的方式，这就意味着所有的应用代码都应该是异步非阻塞的，因为在同一时间只有一个操作是有效的。 1、阻塞一个函数在等待某些事情的返回值的时候回被阻塞。函数被">
-<meta property="og:updated_time" content="2018-06-22T08:57:44.888Z">
+<meta property="og:updated_time" content="2018-06-22T09:00:16.069Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tornado">
 <meta name="twitter:description" content="一、异步和非阻塞I/O实时web功能需要为每个用户提供一个多数时间被闲置的长连接，在传统的同步web服务器中，这意味着要为每个用户提供一个线程，当然每个线程的开销都是很昂贵的。 为了尽量减少并发连接造成的开销，Tornado使用了一种单线程事件循环的方式，这就意味着所有的应用代码都应该是异步非阻塞的，因为在同一时间只有一个操作是有效的。 1、阻塞一个函数在等待某些事情的返回值的时候回被阻塞。函数被">
@@ -97,8 +97,10 @@
 <li>回调注册表 (POSIX信号)</li>
 </ul>
 <p>不论使用哪种类型的接口, 按照定义 异步函数与它们的调用者都有着不同的交互方 式;也没有什么对调用者透明的方式使得同步函数异步(类似<a href="http://www.gevent.org/" target="_blank" rel="noopener">gevent</a>使用轻量级线程的系统性能虽然堪比异步系统,但它们并没有真正的让事情异步).</p>
-<h3 id="3、例子"><a href="#3、例子" class="headerlink" title="3、例子"></a>3、例子</h3><p>一个简单的同步函数<br>    from tornado.httpclient import HTTPClient</p>
-<pre><code>def synchronous_fetch(url):
+<h3 id="3、例子"><a href="#3、例子" class="headerlink" title="3、例子"></a>3、例子</h3><p>一个简单的同步函数</p>
+<pre><code>from tornado.httpclient import HTTPClient
+
+def synchronous_fetch(url):
     http_client = HTTPClient()
     response = http_client.fetch(url)
     return response.body
