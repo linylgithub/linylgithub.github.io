@@ -13,7 +13,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/08/18/suanfa/index.html">
 <meta property="og:site_name" content="linyl">
 <meta property="og:description" content="题目描述请实现一个算法，确定一个字符串的所有字符是否全都不同。这里我们要求不允许使用额外的存储结构。 给定一个string iniString，请返回一个bool值,True代表所有字符全都不同，False代表存在相同的字符。保证字符串中的字符为ASCII字符。字符串的长度小于等于3000。 测试样例：“aeiou”返回：True“BarackObama”返回：False  常规做法： class">
-<meta property="og:updated_time" content="2018-08-18T10:54:49.341Z">
+<meta property="og:updated_time" content="2018-08-18T11:05:39.048Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="suanfa">
 <meta name="twitter:description" content="题目描述请实现一个算法，确定一个字符串的所有字符是否全都不同。这里我们要求不允许使用额外的存储结构。 给定一个string iniString，请返回一个bool值,True代表所有字符全都不同，False代表存在相同的字符。保证字符串中的字符为ASCII字符。字符串的长度小于等于3000。 测试样例：“aeiou”返回：True“BarackObama”返回：False  常规做法： class">
@@ -99,11 +99,15 @@
                 if _char == iniString[j]:
                     return False
         return True
-
-class Different:
+</code></pre><p>正则做法：</p>
+<pre><code>class Different:
     def checkDifferent(self, iniString):
         # write code here
-        return len(iniString)==len(set(iniString))
+            import re
+            regx = re.compile(&apos;.*(.)(.*\\1).*&apos;)
+            if regx.match(iniString):
+                return False
+            return True
 </code></pre>
       
     </div>

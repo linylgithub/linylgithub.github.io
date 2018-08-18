@@ -97,11 +97,15 @@
                 if _char == iniString[j]:
                     return False
         return True
-
-class Different:
+</code></pre><p>正则做法：</p>
+<pre><code>class Different:
     def checkDifferent(self, iniString):
         # write code here
-        return len(iniString)==len(set(iniString))
+            import re
+            regx = re.compile(&apos;.*(.)(.*\\1).*&apos;)
+            if regx.match(iniString):
+                return False
+            return True
 </code></pre>
       
     </div>
