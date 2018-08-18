@@ -83,7 +83,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>题目描述<br>请实现一个算法，确定一个字符串的所有字符是否全都不同。这里我们要求不允许使用额外的存储结构。</p>
+        <h4 id="第一题-确定字符串互异"><a href="#第一题-确定字符串互异" class="headerlink" title="第一题 确定字符串互异"></a>第一题 确定字符串互异</h4><p>题目描述<br>请实现一个算法，确定一个字符串的所有字符是否全都不同。这里我们要求不允许使用额外的存储结构。</p>
 <p>给定一个string iniString，请返回一个bool值,True代表所有字符全都不同，False代表存在相同的字符。保证字符串中的字符为ASCII字符。字符串的长度小于等于3000。</p>
 <p>测试样例：<br>“aeiou”<br>返回：True<br>“BarackObama”<br>返回：False</p>
 <hr>
@@ -97,7 +97,8 @@
                 if _char == iniString[j]:
                     return False
         return True
-</code></pre><p>正则做法：</p>
+</code></pre><hr>
+<p>正则做法：</p>
 <pre><code>class Different:
     def checkDifferent(self, iniString):
         # write code here
