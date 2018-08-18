@@ -115,6 +115,34 @@
     def reverseString(self, iniString):
         # write code here
         return iniString[::-1]
+</code></pre><h4 id="第三题：确定两串乱序同构"><a href="#第三题：确定两串乱序同构" class="headerlink" title="第三题：确定两串乱序同构"></a>第三题：确定两串乱序同构</h4><p>给定两个字符串，请编写程序，确定其中一个字符串的字符重新排列后，能否变成另一个字符串。这里规定大小写为不同字符，且考虑字符串中的空格。</p>
+<p>给定一个string stringA和一个string stringB，请返回一个bool，代表两串是否重新排列后可相同。保证两串的长度都小于等于5000。</p>
+<pre><code>class Same:
+    def checkSam(self, stringA, stringB):
+        # write code here
+        if len(stringA) != len(stringB):
+            return False
+
+        dictA = {}
+        dictB = {}
+
+        for _ch in stringA:
+            if _ch not in dictA:
+                dictA[_ch] = 1
+            else:
+                dictA[_ch] += 1
+
+        for _ch in stringB:
+            if _ch not in dictB:
+                dictB[_ch] = 1
+            else:
+                dictB[_ch] += 1
+
+        for item in dictA:
+            if item not in dictB or dictA[item] != dictB[item]:
+                return False
+
+        return True
 </code></pre>
       
     </div>
