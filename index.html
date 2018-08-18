@@ -88,13 +88,18 @@
 <p>测试样例：<br>“aeiou”<br>返回：True<br>“BarackObama”<br>返回：False</p>
 <hr>
 <p>常规做法：<br>    class Different:<br>        def checkDifferent(self, iniString):</p>
-<pre><code># write code here
-for i in range(len(iniString)):
-    _char = iniString[i]
-    for j in range(i+1,len(iniString)):
-        if _char == iniString[j]:
-            return False
-return True
+<pre><code>        # write code here
+        for i in range(len(iniString)):
+            _char = iniString[i]
+            for j in range(i+1,len(iniString)):
+                if _char == iniString[j]:
+                    return False
+        return True
+
+class Different:
+    def checkDifferent(self, iniString):
+        # write code here
+        return len(iniString)==len(set(iniString))
 </code></pre>
       
     </div>
