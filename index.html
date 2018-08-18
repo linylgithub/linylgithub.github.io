@@ -87,8 +87,10 @@
 <p>给定一个string iniString，请返回一个bool值,True代表所有字符全都不同，False代表存在相同的字符。保证字符串中的字符为ASCII字符。字符串的长度小于等于3000。</p>
 <p>测试样例：<br>“aeiou”<br>返回：True<br>“BarackObama”<br>返回：False</p>
 <hr>
-<p>常规做法：<br>    class Different:<br>        def checkDifferent(self, iniString):</p>
-<pre><code>        # write code here
+<p>常规做法：</p>
+<pre><code>class Different:
+    def checkDifferent(self, iniString):
+        # write code here
         for i in range(len(iniString)):
             _char = iniString[i]
             for j in range(i+1,len(iniString)):
